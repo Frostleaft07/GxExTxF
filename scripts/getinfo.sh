@@ -28,15 +28,15 @@ codename=$(grep -oP "(?<=^ro.product.device=).*" -hs "$SYSTEMDIR"/build*.prop | 
 spl=$(grep -oP "(?<=^ro.build.version.security_patch=).*" -hs "$SYSTEMDIR"/build*.prop | head -1)
 
 
-printf "Android 版本: $release
-品牌: $brand
-机型: $model
-机型代号: $codename
-构建类型: $flavor
-构建 ID: $id
-增量 OTA 信息: $incremental
-安全补丁日期: $spl
-构建指纹信息: $fingerprint
-构建标签: $tags
-自动构建日期：$date
+printf "Android Version: $release
+brand: $brand
+model: $model
+Model code: $codename
+Build type: $flavor
+Construct ID: $id
+Incremental OTA information: $incremental
+Security patch date: $spl
+fingerprint: $fingerprint
+Build tags: $tags
+Date：$date
 "

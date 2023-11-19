@@ -273,9 +273,8 @@ bytesToHuman() {
     done
     echo "$b$d ${S[$s]}"
 }
-echo "原镜像合并后大小: $(bytesToHuman $systemsize)" >> "$outputinfo"
-echo "构建 ROM 类型：$romtype" >> "$outputinfo"
-echo "--------Be redesigned by tosasitill 0202 & 0227--------" >> "$outputinfo"
+echo "The size of the original image after merging: $(bytesToHuman $systemsize)" >> "$outputinfo"
+echo "ROM：$romtype" >> "$outputinfo"
 
 echo "Creating Image: $outputimagename"
 # Use ext4fs to make image in P or older!
